@@ -10,12 +10,12 @@ resource "ibm_service_instance" "biginsights" {
 # Can be obtained from CLI: `bx cf marketplace`
 variable "biginsights_service" {
   description = "The Bluemix CF identifier for BigInsights."
-  default = "BigInsightsForApacheHadoop"
+  default = "BigInsightsonCloud"
 }
 
 # The Bluemix CF Plan for biginsights
 # Can be obtained from CLI: `bx cf marketplace`
 variable "biginsights_plan" {
   description = "The Bluemix CF plan for BigInsights."
-  default = "Basic"
+  default = "Enterprise"
 }
